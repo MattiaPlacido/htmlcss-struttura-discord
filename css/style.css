@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 /* Debug */
 .debug {
   background-color: red;
@@ -11,17 +14,57 @@
   border: 2px dashed black;
 }
 /* Utils */
-.page-header {
-  background-color: azure;
-}
-
 .container {
   margin: 0 auto;
-  width: 1000;
-  max-width: 100%;
+  width: 900px;
 }
 
-.page-header > .container {
+/* Header */
+.top-header {
+  background-color: aqua;
+  padding: 10px 0;
+}
+
+.item {
+  font-weight: bold;
+  border: 2px dashed black;
+  width: 100%;
+  padding: 10px;
+}
+
+.top-header > .container {
+  background-color: orange;
   display: flex;
   justify-content: space-between;
+}
+
+.container > .item:nth-child(2) {
+  text-align: center;
+}
+
+.container > .item:last-child {
+  text-align: right;
+}
+
+.bottom-header {
+  background-color: blue;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-header {
+  background-color: purple;
+  width: 600px;
+  height: 200px;
+  border: 2px dashed black;
+}
+/* Main */
+
+.main-section {
+  padding: 0 10px;
+}
+
+.main-section:nth-child(2n) {
+  background-color: gray;
 }

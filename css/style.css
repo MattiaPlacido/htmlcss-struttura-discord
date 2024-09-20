@@ -1,0 +1,27 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* Debug */
+.debug {
+  background-color: red;
+  padding: 30px;
+  border: 2px dashed black;
+}
+/* Utils */
+.page-header {
+  background-color: azure;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000;
+  max-width: 100%;
+}
+
+.page-header > .container {
+  display: flex;
+  justify-content: space-between;
+}
